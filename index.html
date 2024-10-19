@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model - Cheat Sheet</title>
+    <link rel="stylesheet" href="./resources/styles.css">
+</head>
+<body>
+    <h1>CSS Box Model Reference Sheet</h1>
+    <div class="container">
+        <div id="HeightAndWidth" class="subject">
+            <h2>Height and Width</h2>
+            <div class="content-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">height</td>
+                            <td>How tall an element's box is</td>
+                        </tr>
+                        <tr>
+                            <td class="code">width</td>
+                            <td>How wide an element's box is</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <p>p {</p>    
+                    <p class="indented">height: 180px; </p>
+                    <p class="indented">width: 200px; </p>
+                    <p>}</p>    
+                </div>
+            </div> 
+        </div>
+        <div id="Borders" class="subject">
+            <h2>Borders</h2>
+            <div class="content-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Values</th>
+                            <th>Description</th>
+                            <th>Keywords and Units</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">border</td>
+                            <td>width</td>
+                            <td>The thickness of the border</td>
+                            <td>thin, medium, thick, or set in pixels</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>style</td>
+                            <td>The design of the border</td>
+                            <td>none, dotted, solid, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values" target="_blank">others</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>color</td>
+                            <td>The color of the border</td>
+                            <td>Over 140 built in color keywords; can also specify with RGB or hexadecimal notation</td>
+                        </tr>
+                        <tr>
+                            <td class="code">border-radius</td>
+                            <td></td>
+                            <td>Affects the curvature of the corners by setting radius of corners</td>
+                            <td>Set in pixels or percent of width of box</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="example">
+                    <h4>Border example:</h4>
+                    <p>p {</p>    
+                    <p class="indented">border: 3px solid red;</p>
+                    <p>}</p>
+                </div>
+                <div class="example">
+                    <h4>Border-radius example:</h4>
+                    <p>p {</p>    
+                    <p class="indented">border-radius: 5px;</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+        <div id="Padding" class="subject">
+            <h2>Padding</h2>
+            <div class="content-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">padding</td>
+                            <td>Specifies the space between the contents of the box and its border on all four sides</td>
+                            <td class="code">padding: 10px;</td>
+                        </tr>
+                        <tr>
+                            <td class="code">padding-top</td>
+                            <td>Specifies the padding on the top side</td>
+                            <td class="code">padding-top: 10px;</td>
+                        </tr>
+                        <tr>
+                            <td class="code">padding-right</td>
+                            <td>Specifies the padding on the right side</td>
+                            <td class="code">padding-right: 10px;</td>
+                        </tr>
+                        <tr>
+                            <td class="code">padding-bottom</td>
+                            <td>Specifies the padding on the bottom side</td>
+                            <td class="code">padding-bottom: 10px;</td>
+                        </tr>
+                        <tr>
+                            <td class="code">padding-left</td>
+                            <td>Specifies the padding on the left side</td>
+                            <td class="code">padding-left: 10px;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+        <div id="PaddingShorthand" class="subject">
+            <h2>Padding Shorthand</h2>
+            <div class="content-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th># of Values</th>
+                            <th>Order of Values</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4 Values</td>
+                            <td>top -- right -- bottom -- left</td>
+                            <td class="code">padding: 6px 11px 4px 9px;</td>
+                        </tr>
+                        <tr>
+                            <td>3 Values</td>
+                            <td>top -- right/left -- bottom</td>
+                            <td class="code">padding: 5px 10px 20px;</td>
+                        </tr>
+                        <tr>
+                            <td>2 Values</td>
+                            <td>top/botton -- right/left</td>
+                            <td class="code">padding: 5px 10px;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- C:\Users\Justin\VSCode\Codecademy\BuildYourOwnCheatSheet\index.html -->
